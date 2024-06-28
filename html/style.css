@@ -1,0 +1,121 @@
+/* html/style.css */
+body {
+  background: #f5f5f5;
+  color: #303030;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Added more font options */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#Main {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Added box shadow */
+  max-width: 600px; /* Set a max width for better readability */
+}
+
+#Title {
+  font-size: 2.5rem; /* Adjusted font size for better scaling */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#AccessPort {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+input {
+  background: #e5e5e5;
+  color: #303030;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#ConnectButton {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+#ConnectButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+#RoomID {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#Chat {
+  height: 300px; /* Set a fixed height for the chat area */
+  overflow-y: auto; /* Enable scrolling if needed */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Message {
+  color: #a0a0a0;
+  margin-bottom: 5px;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+#MessageLabel {
+  margin-bottom: 5px;
+}
+
+#ComposedMessage {
+  width: calc(100% - 100px); /* Adjust width for the Send button */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+#SendMessage {
+  background-color: #008CBA; /* Blue button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 5px;
+}
+
+#SendMessage:hover {
+  background-color: #007bff; /* Darker blue on hover */
+}
+
+.timestamp {
+  color: gray;
+  font-size: 0.8em;
+  margin-right: 5px; 
+}
+
+/* Media queries for responsive design */
+@media (max-width: 500px) {
+  #Main {
+    max-width: 90%;
+  }
+
+  #ComposedMessage {
+    width: calc(100% - 80px);
+  }
+}
